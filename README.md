@@ -1,6 +1,18 @@
 # pyqt5
 
 ## OSX
+
+### Installation
+MacOS notoriously ships with old python installations. The best options so far has proven to be the macos ports system [1] (in a true unix spirit). 
+
+The following packages are required for PyQT5:
+
+- python27
+- py27-pyqt5
+
+1) [https://www.macports.org](https://www.macports.org)
+
+### Usage
 - use a recent python installation, I am using macports `python27` and `py27-pyqt5`
 - create ui file with QTCreator
 - convert it to python with `pyuic5 -x -o mainwindow.py mainwindow.ui`. `pyuic5` was installed with pyqt5. the -x flag will add a boilerplate main() function which sould be subclassed if one wants to extend the generated code
@@ -32,5 +44,8 @@
         options = {"build_exe": build_exe_options},
         executables = [Executable("mainwindow.py", base=base)])
 
-## windows
+## Windows
+TBD
+
+## Linux
 TBD
