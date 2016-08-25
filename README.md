@@ -3,7 +3,7 @@
 ## OSX
 
 ### Installation
-MacOS notoriously ships with old python installations. The best options so far has proven to be the macos ports system [1] (in a true unix spirit). 
+MacOS notoriously ships with old python installations. The best options so far has proven to be the macos ports system [1](https://www.macports.org) (in a true unix spirit). 
 
 The following packages are required for PyQT5:
 
