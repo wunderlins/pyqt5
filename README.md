@@ -66,7 +66,9 @@ The following packages are required for PyQT5:
         executables = [Executable("mainwindow.py", base=base)])
 
 ## Windows
-TBD
+
+
+- PyQt5 for PYthon 2.7: https://github.com/pyqt/python-qt5
 
 ## Linux
 
