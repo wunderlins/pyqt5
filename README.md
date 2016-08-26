@@ -73,6 +73,7 @@ Install the official python 2.7 release from
 [http://python.org](http://python.org). Use `pip` to install the following 
 packages:
 - 
+- PyQt5 for PYthon 2.7: https://github.com/pyqt/python-qt5
 
 ## Linux
 

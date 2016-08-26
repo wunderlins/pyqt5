@@ -1,7 +1,7 @@
 PHONY:
 
 FILE_UI = mainwindow.ui
-FILE_APP = mainwindow.py
+FILE_APP = app.py
 FILE_EXE = mainwindow
 
 pyinstaller_opts = -s
