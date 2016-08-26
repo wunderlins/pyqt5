@@ -17,4 +17,7 @@ osx: clean
 	pyinstaller $(pyinstaller_opts) -n $(FILE_EXE) --distpath dist/osx -w $(FILE_APP)
 
 linux: clean
-	pyinstaller $(pyinstaller_opts) -n $(FILE_EXE) --distpath dist/linux  -F -w $(FILE_APP)
+	pyinstaller $(pyinstaller_opts) -n $(FILE_EXE) --distpath dist/linux -F -w $(FILE_APP)
+
+windows: clean
+	pyinstaller $(pyinstaller_opts) -n $(FILE_EXE) --distpath dist/windows -F -w $(FILE_APP)
