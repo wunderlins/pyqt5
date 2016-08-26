@@ -2,7 +2,8 @@
 
 # Form implementation generated from reading ui file 'mainwindow.ui'
 #
-# Created by: PyQt5 UI code generator 5.6
+# Created: Fri Aug 26 07:48:08 2016
+#      by: PyQt5 UI code generator 5.3.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -18,8 +19,7 @@ class Ui_MainWindow(object):
         self.formLayoutWidget.setGeometry(QtCore.QRect(10, 10, 261, 85))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
         self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
-        self.formLayout.setContentsMargins(11, 11, 11, 11)
-        self.formLayout.setSpacing(6)
+        self.formLayout.setContentsMargins(0, 0, 0, 0)
         self.formLayout.setObjectName("formLayout")
         self.label = QtWidgets.QLabel(self.formLayoutWidget)
         self.label.setObjectName("label")

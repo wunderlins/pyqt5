@@ -1,5 +1,15 @@
 # pyqt5
 
+## Workflow
+
+- Use QtDesigner to build your user interface
+- copy the UI File to this project folder
+- TODO: copy ressources
+- TODO: subclass the ui file to add events 
+- TODO: configure make file in the header to reflect the ressources name
+- run `make clean` and `make <platform>`
+- you should find the executable or app bundle in `dist/<platform>/$FILE_EXE`
+
 ## OSX
 
 ### Installation
@@ -55,5 +65,5 @@ Install the following packages with pip:
 - PyInstaller
 
 Install pyqt5 with apt
-`sudo apt-get install python-pyqt5 python-pyqt5-dbg`
+`sudo apt-get install python-pyqt5 python-pyqt5-dbg pyqt5-dev-tools`
 

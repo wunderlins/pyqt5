@@ -1,10 +1,20 @@
+PHONY:
+
+FILE_UI = mainwindow.ui
+FILE_APP = mainwindow.py
+FILE_EXE = mainwindow
+
+pyinstaller_opts = -s
+
+ui:
+	pyuic5 -x -o $(FILE_APP) $(FILE_UI)
 
 clean:
 	rm -rf build/*
-	rm -rf dist/*
+	#rm -rf dist/*
 
 osx: clean
-	pyinstaller -w mainwindow.py
+	pyinstaller $(pyinstaller_opts) -n $(FILE_EXE) --distpath dist/osx -w $(FILE_APP)
 
 linux: clean
-	pyinstaller -F -w mainwindow.py
+	pyinstaller $(pyinstaller_opts) -n $(FILE_EXE) --distpath dist/linux  -F -w $(FILE_APP)
