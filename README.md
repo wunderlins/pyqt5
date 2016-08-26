@@ -1,5 +1,16 @@
 # pyqt5
 
+This packages enables you to create a Qt% application in python and build a native binary for Windows, OSX (10.7+) and Linux.
+
+## requirements
+
+On all platforms:
+- [QtStudio](https://www.qt.io/ide/), GPL Edition is free
+- Python 2.7 (3.x is supoorted but not in this project)
+- Qt5 (binary and header files)
+- python packages: PyQt5
+- PyInstaller (via pip, ports or apt)
+
 ## Workflow
 
 - Use QtDesigner to build your user interface
