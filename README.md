@@ -5,6 +5,7 @@ This packages enables you to create a Qt% application in python and build a nati
 ## requirements
 
 On all platforms:
+- gnu make (gmake on OSX, make on linux by default)
 - [QtStudio](https://www.qt.io/ide/), GPL Edition is free
 - Python 2.7 (3.x is supoorted but not in this project)
 - Qt5 (binary and header files)
@@ -16,7 +17,7 @@ On all platforms:
 - Use QtDesigner to build your user interface
 - copy the UI File to this project folder
 - TODO: copy ressources
-- TODO: subclass the ui file to add events 
+- subclass the ui file to add event, see app.py for an example
 - TODO: configure make file in the header to reflect the ressources name
 - run `make clean` and `make <platform>`
 - you should find the executable or app bundle in `dist/<platform>/$FILE_EXE`
@@ -66,7 +67,12 @@ The following packages are required for PyQT5:
         executables = [Executable("mainwindow.py", base=base)])
 
 ## Windows
-TBD
+
+### Installation
+Install the official python 2.7 release from 
+[http://python.org](http://python.org). Use `pip` to install the following 
+packages:
+- 
 
 ## Linux
 
