@@ -48,4 +48,12 @@ The following packages are required for PyQT5:
 TBD
 
 ## Linux
-TBD
+
+### Installation
+
+Install the following packages with pip:
+- PyInstaller
+
+Install pyqt5 with apt
+`sudo apt-get install python-pyqt5 python-pyqt5-dbg`
+
