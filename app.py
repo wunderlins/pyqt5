@@ -8,8 +8,12 @@ class main(Ui_MainWindow):
 	def __init__(self, parent=None):
 		super(Ui_MainWindow, self).__init__()
 		self.setupUi(MainWindow)
+		
+		self.lineEdit.returnPressed.connect(self.handleReturn)
 	
 	# TODO: add your custom code, event handlers, etc. here.
+	def handleReturn(self):
+		print "ouch"
 
 if __name__ == "__main__":
     import sys
