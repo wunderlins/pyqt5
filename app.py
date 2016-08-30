@@ -10,10 +10,15 @@ class main(Ui_MainWindow):
 		self.setupUi(MainWindow)
 		
 		self.lineEdit.returnPressed.connect(self.handleReturn)
+		self.lineEdit.textChanged[str].connect(self.handleTextChange)
 	
 	# TODO: add your custom code, event handlers, etc. here.
 	def handleReturn(self):
 		print "ouch"
+
+	def handleTextChange(self, text):
+		self.lineEdit_2.setText(text)
+		print text
 
 if __name__ == "__main__":
     import sys
