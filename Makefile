@@ -1,8 +1,8 @@
 PHONY:
 
 FILE_UI = mainwindow.ui
-FILE_APP = app.py
-FILE_EXE = mainwindow
+FILE_APP = systray.py
+FILE_EXE = systray
 
 pyinstaller_opts = -s
 
@@ -21,3 +21,6 @@ linux: clean
 
 windows: clean
 	pyinstaller -n $(FILE_EXE) --distpath dist/windows -F -w $(FILE_APP)
+
+ressources:
+	pyrcc5 -no-compress -o systray_rc.py systray.qrc
