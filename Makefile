@@ -1,10 +1,10 @@
 PHONY:
 
 FILE_UI = mainwindow.ui
-FILE_APP = systray.py
-FILE_EXE = systray
+FILE_APP = tray.py
+FILE_EXE = tray
 
-pyinstaller_opts = -s
+pyinstaller_opts = -s --clean
 
 ui:
 	pyuic5 -x -o $(FILE_APP) $(FILE_UI)
@@ -19,7 +19,7 @@ osx: clean
 linux: clean
 	pyinstaller $(pyinstaller_opts) -n $(FILE_EXE) --distpath dist/$@ -F -w $(FILE_APP)
 
-windows: clean
+windows: #clean
 	pyinstaller $(pyinstaller_opts) -n $(FILE_EXE) --distpath dist/$@ -F -w $(FILE_APP)
 
 ressources:
