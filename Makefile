@@ -4,7 +4,16 @@ FILE_UI = mainwindow.ui
 FILE_APP = tray.py
 FILE_EXE = tray
 
-pyinstaller_opts = -s --clean
+#pyinstaller_opts = -s --clean
+pyinstaller_opts = --clean
+
+ifeq ($(OS),Windows_NT)
+	make   = ./bin/make
+	magick = ./bin/magick.exe
+else
+	make   = make
+	magick = ImageMagick
+endif
 
 ui:
 	pyuic5 -x -o $(FILE_APP) $(FILE_UI)
