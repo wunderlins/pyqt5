@@ -20,6 +20,7 @@ class main(UI):
 		self.createActions()
 		self.createTrayIcon()
 		self.setIcon(QIcon(':/images/heart.png'))
+		self.trayIcon.show()
 	
 	def createActions(self):
 		#self.minimizeAction = QAction("Mi&nimize", self.parent, triggered=self.parent.hide)
