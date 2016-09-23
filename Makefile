@@ -1,4 +1,4 @@
-PHONY: ui
+PHONY: gui
 
 FILE_UI = ui/ad/ad/mainwindow.ui
 FILE_MAIN = AuthWindow.py
@@ -16,7 +16,7 @@ else
 	magick = ImageMagick
 endif
 
-ui:
+gui:
 	pyuic5 -x -o $(FILE_MAIN) $(FILE_UI)
 
 clean:
