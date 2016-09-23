@@ -17,4 +17,5 @@ SOURCES += main.cpp\
 
 HEADERS  += dialog.h
 
-FORMS    += dialog.ui
+FORMS    += dialog.ui \
+    mainwindow.ui
