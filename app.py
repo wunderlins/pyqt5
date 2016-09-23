@@ -14,13 +14,17 @@ class main(UI):
 		self.setupUi(parent)
 		self.parent = parent
 		
-		print type(self).__name__
+		#print type(self).__name__
+		print self.lUsername
 		
 		#self.minimizeAction = QAction("Mi&nimize", parent, triggered=parent.hide)
 		self.createActions()
 		self.createTrayIcon()
 		self.setIcon(QIcon(':/images/heart.png'))
 		self.trayIcon.show()
+		
+		# setup gui events
+		self.events()
 	
 	def createActions(self):
 		#self.minimizeAction = QAction("Mi&nimize", self.parent, triggered=self.parent.hide)
@@ -42,7 +46,11 @@ class main(UI):
 	def setIcon(self, icon):
 		self.trayIcon.setIcon(icon)
 		self.parent.setWindowIcon(icon)
-		
+
+	def events(self):
+		self.bCancelOk.button(self.bCancelOk.Ok).clicked.connect(QApplication.instance().quit)
+		self.bCancelOk.button(self.bCancelOk.Cancel).clicked.connect(QApplication.instance().quit)
+
 if __name__ == "__main__":
 	app = QtWidgets.QApplication(sys.argv)
 
