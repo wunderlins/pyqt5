@@ -1,6 +1,7 @@
-PHONY:
+PHONY: ui
 
-FILE_UI = mainwindow.ui
+FILE_UI = ui/ad/ad/mainwindow.ui
+FILE_MAIN = AuthWindow.py
 FILE_APP = tray.py
 FILE_EXE = tray
 
@@ -16,7 +17,7 @@ else
 endif
 
 ui:
-	pyuic5 -x -o $(FILE_APP) $(FILE_UI)
+	pyuic5 -x -o $(FILE_MAIN) $(FILE_UI)
 
 clean:
 	rm -rf build/*
