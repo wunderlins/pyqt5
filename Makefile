@@ -1,7 +1,7 @@
 PHONY: gui
 
-FILE_UI = ui/ad/ad/dialog.ui
-FILE_MAIN = AuthWindow.py
+#FILE_UI = ui/ad/ad/dialog.ui
+#FILE_MAIN = AuthWindow.py
 FILE_APP = tray.py
 FILE_EXE = tray
 
@@ -17,7 +17,9 @@ else
 endif
 
 gui:
-	pyuic5 -x -o $(FILE_MAIN) $(FILE_UI)
+	pyuic5 -x -o AuthWindow.py ui/ad/ad/dialog.ui
+	pyuic5 -x -o MainWindow.py ui/ad/ad/mainwindow.ui
+	
 
 clean:
 	rm -rf build/*

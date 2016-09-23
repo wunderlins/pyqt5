@@ -6,49 +6,55 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>549</width>
-    <height>308</height>
+    <width>560</width>
+    <height>464</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QSplitter" name="splitter">
+  <widget class="QSplitter" name="splitter_2">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>0</y>
-     <width>531</width>
-     <height>301</height>
+     <width>541</width>
+     <height>451</height>
     </rect>
    </property>
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
    <property name="orientation">
-    <enum>Qt::Horizontal</enum>
+    <enum>Qt::Vertical</enum>
    </property>
-   <widget class="QListWidget" name="listWidget">
-    <item>
-     <property name="text">
-      <string>ysdxcv</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>yxcvyxcvyxcv</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>y xcv yxcv yxcv yxcv</string>
-     </property>
-    </item>
+   <widget class="QSplitter" name="splitter">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QListWidget" name="searchResult">
+     <item>
+      <property name="text">
+       <string>ysdxcv</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>yxcvyxcvyxcv</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>y xcv yxcv yxcv yxcv</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QTableView" name="details"/>
    </widget>
-   <widget class="QTableView" name="tableView"/>
+   <widget class="QPlainTextEdit" name="debugConsole"/>
   </widget>
  </widget>
  <resources/>
