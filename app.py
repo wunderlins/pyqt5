@@ -2,16 +2,13 @@
 
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
-from mainwindow import Ui_MainWindow
+from AuthWindow import Ui_AuthWindow as UI
 
-class main(Ui_MainWindow):
+class main(UI):
 	def __init__(self, parent=None):
-		super(Ui_MainWindow, self).__init__()
-		self.setupUi(MainWindow)
+		super(UI, self).__init__()
+		self.setupUi(win)
 		
-		self.lineEdit.returnPressed.connect(self.handleReturn)
-		self.lineEdit.textChanged[str].connect(self.handleTextChange)
-	
 	# TODO: add your custom code, event handlers, etc. here.
 	def handleReturn(self):
 		print "ouch"
@@ -23,10 +20,10 @@ class main(Ui_MainWindow):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
+    win = QtWidgets.QMainWindow()
     #ui = Ui_MainWindow()
-    ui = main(MainWindow)
+    ui = main(win)
     #ui.setupUi(MainWindow)
-    MainWindow.show()
+    win.show()
     sys.exit(app.exec_())
 

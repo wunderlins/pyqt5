@@ -1,6 +1,6 @@
 PHONY: gui
 
-FILE_UI = ui/ad/ad/mainwindow.ui
+FILE_UI = ui/ad/ad/dialog.ui
 FILE_MAIN = AuthWindow.py
 FILE_APP = tray.py
 FILE_EXE = tray
